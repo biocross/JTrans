@@ -1,0 +1,22 @@
+<head>
+  <title>transport</title>
+</head>
+
+<body>
+	{{> navigation}}
+		{{> map}}
+
+	{{> footer}}
+</body>
+
+<template name="map">
+	<div class="map-container">
+    	{{> googleMap name="homePageMap" options=exampleMapOptions}}
+  	</div>
+  	<div class="container center-align">
+  		<p>
+  			<a class="waves-effect waves-light btn-large light-blue">Call Us</a>
+  			<a class="waves-effect waves-light btn-large light-blue">Book Now</a>
+  		</p>
+  	</div>
+</template>
