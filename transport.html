@@ -1,10 +1,14 @@
 <head>
   <title>transport</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 </head>
 
 <body>
 	{{> navigation}}
+		<div class="row" style="padding: 0; margin-bottom: 0;"> 
 		{{> map}}
+		</div>
 
 	{{> footer}}
 </body>
@@ -12,11 +16,12 @@
 <template name="map">
 	<div class="map-container">
     	{{> googleMap name="homePageMap" options=exampleMapOptions}}
+	  	<div class="container center-align" style="z-index: 1; position: relative; bottom: 150px;">
+	  		<p>
+	  			<a class="waves-effect waves-light btn-large light-blue">Call Us</a><br/>
+	  			<a class="waves-effect waves-light btn-large light-blue" style="margin-top: 5px;">Book Now</a>
+	  		</p>
+	  	</div>
   	</div>
-  	<div class="container center-align">
-  		<p>
-  			<a class="waves-effect waves-light btn-large light-blue">Call Us</a>
-  			<a class="waves-effect waves-light btn-large light-blue">Book Now</a>
-  		</p>
-  	</div>
+  	
 </template>
